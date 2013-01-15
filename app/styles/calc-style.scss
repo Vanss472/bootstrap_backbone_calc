@@ -1,0 +1,385 @@
+/*"Entypo pictograms by Daniel Bruce — www.entypo.com"*/
+
+@import "compass_twitter_bootstrap/variables";
+@import "compass_twitter_bootstrap/mixins";
+ 
+$background-color: #50627d;
+
+
+@font-face {
+    font-family: 'entypo';
+    src: url('font/entypo.eot');
+    src: url('font/entypo.eot?#iefix') format('embedded-opentype'),
+         url('font/entypo.woff') format('woff'),
+         url('font/entypo.ttf') format('truetype'),
+         url('font/entypo.svg#entypo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'entypo-social';
+    src: url('font/entypo-social.eot');
+    src: url('font/entypo-social.eot?#iefix') format('embedded-opentype'),
+         url('font/entypo-social.woff') format('woff'),
+         url('font/entypo-social.ttf') format('truetype'),
+         url('font/entypo-social.svg#entypo-social') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+  background: $background-color;
+  padding-top: 200px; 
+}
+
+a {
+  color: #FFF;
+  &:hover { color: #FFF; text-decoration: none; }
+  &:visited { color: #FFF; }
+}
+
+.antennablack {
+  font-family: "Antenna Black";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.antennaregular {
+  font-family: "Antenna Regular";
+  font-style: normal;
+  font-weight: normal;
+}
+.antennaextralight {
+  font-family: "Antenna ExtraLight";
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.navbar-inner {
+ background: $background-color;
+ position: fixed;
+ top: 0;
+ right: 0;
+ left: 0;
+ z-index: 1030;
+ margin-bottom: 0;
+ border: none;
+ border-radius: none;
+ box-shadow: none;
+}
+
+h1 {color: #FFF; text-transform: uppercase;}
+h2.lightblue {color: #95c6df; text-transform: uppercase; line-height: 0;}
+h2.aqua {color: #57b0cc; text-transform: uppercase; line-height: 1;}
+h5 {color: #FFF; font-weight: normal; font-family: $sansFontFamily;}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#main {
+ margin:0 auto;
+ float:none;
+}
+
+.content { background: #e9eae8; @include border-radius(5px 5px 5px 5px); padding-bottom: 5px;}
+
+#myTabContent {
+  margin: auto 50px;
+}
+
+.nav-tabs > li > a {
+  font-family: "Antenna Black";
+  font-style: normal;
+  font-weight: normal;
+  font-size:  14px;
+  text-transform: uppercase;
+}
+.nav-tabs > li > a {
+  padding-right: 45px;
+  padding-left: 44px;
+  margin-right: 2px;
+  line-height: 14px; /* keeps the overall height an even number*/
+}
+
+.nav-tabs > li > a#questions {
+  padding-right: 23px;
+  padding-left: 23px;
+  margin-right: 2px;
+  line-height: 14px; /* keeps the overall height an even number*/
+}
+
+.nav-tabs > li:nth-child(2){
+  border-right: 1px solid #ddd;
+}
+.nav-tabs > li:nth-child(2){
+  border-left: 1px solid #ddd;
+}
+ 
+
+/*Actual tabs (as links)*/
+.nav-tabs > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: $baseLineHeight;
+  border: 1px solid transparent;
+  @include border-radius(5px 1px 0 0);
+  &:hover {
+    border-color: $grayLighter $grayLighter #ddd;
+  }
+}
+
+.nav-tabs> li > a#noneRadius {
+  @include border-radius(0px 1px 0 0);
+}
+.nav-tabs> li > a#noneRadius2 {
+  @include border-radius(0px 5px 0 0);
+}
+
+.nav-tabs> li > a.noneRadius {
+  @include border-radius(0px 1px 0 0);
+}
+.nav-tabs> li > a.noneRadius2 {
+  @include border-radius(0px 5px 0 0);
+}
+/* Active state, and it's :hover to override normal :hover*/
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+  color: $white;
+  background-color: #f7a11a;
+  border: 1px solid #f7a11a;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+.nav > .disabled > a {
+  color: #f7a11a;
+}
+
+.tab-pane > p {
+  font-family: "Antenna ExtraLight";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  color: #000;
+}
+
+.antennalightSize {
+  font-size: 17px;
+  color: #000;
+}
+
+.antennablackSize {
+  font-size:  12px;
+  text-transform: uppercase;
+}
+
+.antennablackSize2 {
+  font-size:  14px;
+  text-transform: uppercase;
+}
+
+.pager a {
+  display: inline-block;
+  padding: 5px 14px;
+  margin: 0 20px;
+  background-color: #f7a11a;
+  border: 1px solid #ddd;
+  @include border-radius(5px);
+}
+
+.pager a:hover {
+  text-decoration: none;
+  background-color: #F89406;
+}
+
+.fila {
+  width: 32px;
+  height:40px;
+  margin-left:16px;
+  margin-bottom:0px;
+  margin-top:-51px;
+}
+.border_source h2 {
+  color:#FFF;
+  font-family: "Antenna ExtraLight";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  background-color:#56728d;
+  margin-bottom:20px;
+  padding:0px 10px;
+  height:30px;
+  line-height:30px;
+}
+.border_source#sx h2 {
+  margin-left:-16px;  
+  padding-left:50px;
+}
+.border_source#sx h2 span.h2 {
+  background:url(../images/h2border.png) no-repeat left top;
+  height:40px;
+  display:block;
+  visibility:visible;
+  margin-left:-70px;
+  padding-left: 20px;
+}
+
+
+.triangle-right {
+  /*font-family: "entypo";*/
+  font-size: 1.2em;
+}
+
+.triangle-down {
+  /*font-family: 'entypo';*/
+  font-size: 5em;
+  color: #f7a11a;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background-color: #3a4a62;
+        -webkit-box-shadow: 0 -8px 6px -7px #3D3D3D;
+        -moz-box-shadow: 0 -8px 6px -7px #3D3D3D;
+        box-shadow: 0 -8px 6px -7px #3D3D3D;  
+}
+
+#inline {
+  padding-top: 20px;
+}
+
+#inline ul {
+  /*padding: 0;*/
+  list-style-type: none;
+  color: #FFF;
+}
+
+#inline ul li { display: inline; margin-right: 5px; }
+
+.centered {
+    margin: auto;
+    padding-top: 5px;
+    /*padding-left: 30px;*/
+    width: 570px;
+    /*height: 10px;*/
+}
+
+.footer-tabs > li {
+  /*border: 1px solid green;*/
+  margin: 0 8px 0 8px;
+}
+
+.footer-tabs > li > a {
+  font-family: "Antenna Black";
+  font-style: normal;
+  font-weight: normal;
+  font-size:  11px;
+  color: #4e667e;
+  text-transform: uppercase;
+}
+
+
+h6 {text-transform: uppercase; line-height: 0; display: inline;}
+
+.linkedin {
+  font-family: 'entypo-social';
+  font-size: 1.5em;
+  line-height: 1;
+  color: #FFF;
+}
+
+.twitter {
+  font-family: 'entypo-social';
+  font-size: 1.5em;
+  line-height: 1;
+  color: #FFF;
+}
+
+.facebook {
+  font-family: 'entypo-social';
+  font-size: 1.5em;
+  line-height: 1;
+  color: #FFF;
+}
+
+#horizontalLine {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+    
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 600px;
+    height: 8px;
+    background-color: #4B6378;
+    position: relative;
+    top: 15px;
+}
+
+.circle {
+  list-style: none;
+  text-align: center;
+}
+
+
+.circle li {
+  position: relative;
+  display: inline-block;
+  margin-right: 44px;
+}
+
+.circle a { 
+  display: block;
+  background: #4B6378; 
+  /*margin-left: 6px;*/
+  width: 15px;
+  height: 15px;
+  position: relative;
+  bottom: 11px;
+  border: 3px solid #4B6378;
+  -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+  border-radius: 50%;
+  behavior: url(PIE.htc);
+}
+
+.circle a:hover {
+  text-decoration: none;
+  background-color: #81ACD6;
+}
+
+.circle-tab { 
+  font-family: "Antenna Black";
+  font-style: normal;
+  font-weight: normal;
+  font-size:  11px;
+  color: #4e667e;
+  text-transform: uppercase;
+
+  top: 20px; position: relative; right: 14px; width: 55px;
+}
+
+
+
+/* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
